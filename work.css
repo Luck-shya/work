@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  font-family: "Rubik", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  width: 30%;
+  z-index: 2;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.title {
+  color: white;
+  font-weight: 900;
+  font-size: 4rem;
+}
+.description {
+  color: lemonchiffon;
+}
+
+.container-2 {
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+.btn {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 20px 50px;
+  color: black;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 686px) {
+  .description,
+  .container-2,
+  .title,
+  .btn,
+  .container-1,
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-2 {
+    justify-content: flex-start;
+    height: min-content;
+    width: inherit;
+    align-self: center;
+    justify-content: center;
+    font-size: 110%;
+  }
+  .container-1 {
+    justify-content: center;
+    height: min-content;
+    width: inherit;
+    z-index: 2;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: -15px;
+    margin-right: 1px;
+  }
+  .btn {
+    padding: 2% 10% 2%;
+    align-items: center;
+  }
+  .title {
+    font-size: -webkit-xxx-large;
+  }
+}
